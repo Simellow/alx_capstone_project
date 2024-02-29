@@ -13,9 +13,13 @@ The primary purpose of this app is to allow users to create, edit, and track tas
 By using the Task Manager App, users can:
 
 **Add Tasks** - Quickly add new tasks with relevant details such as due dates, priorities, and descriptions.
+
 **Edit Tasks** - Modify existing tasks, update due dates, and mark tasks as completed.
+
 **View Tasks** - Easily view all tasks in a clean and organized interface.
+
 **Filter and Sort** - Sort tasks by categoty
+
 **Stay Organized** - Keep track of deadlines and stay on top of your responsibilities.
 
 ## Features and Functionality:
