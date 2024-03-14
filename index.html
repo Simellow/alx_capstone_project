@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+    <h1>A Task Manager App</h1>
+    <div class="container">
+        <div id="toast-container"></div>
+
+        <!-- Form for adding Task -->
+        <form id="taskForm">
+            <input class="task" type="text" id="taskInput" placeholder="Enter task..." />
+            <input class="category" type="text" id="categoryInput" placeholder="Category..." />
+            <input type="date" id="dueDateInput"/>
+            <select id="priorityInput">
+                <option value="">All Priorities</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <div id="reminderdiv">
+                <label for="reminderInput">Reminder</label>
+                <input type="checkbox" id="setReminderBtn" />
+            </div>
+                <button type="submit" id="addBtn">ADD TASK</button>
+        </form>
+        <!-- End of add task form -->
+
+        <!-- Fitering and searching tasks -->
+        <div class="filters">
+            <input class="search" type="text" id="searchInput" placeholder="Search task..." />
+
+            <input type="date" id="dueDateFilter" />
+            <select id="priorityFilter">
+                <option value="">All Priorities</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+        <!-- End of filtering and searching tasks -->
+
+
+        <!-- Task outputs... -->
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
