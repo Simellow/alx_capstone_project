@@ -109,6 +109,10 @@ Responsive Design: The application is accessible on desktops, tablets, and smart
 
 
 
+
+
+
+
 ### Feel free to reach out if you have any questions or feedback:
 
 ### Name: 
