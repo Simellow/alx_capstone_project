@@ -69,13 +69,13 @@ Creating Tasks: Users can create new tasks by entering task details such as task
 
 Editing Tasks: To edit a task, users can click on the task element to access the task details, make necessary modifications, and save the changes.
 
-Deleting Tasks: Users can delete tasks individually by clicking on a delete button associated with each task or delete multiple tasks at once using bulk delete options.
+Deleting Tasks: Users can delete tasks individually by clicking on a delete button associated with each task.
 
-Search and Filtering: Users can utilize search and filtering options to search for specific tasks based on various criteria and filter tasks based on categories, due dates, priority levels, etc.
+Search and Filtering: Users can utilize search and filtering options to search for specific tasks based on various criteria and filter tasks based on categories, due dates, etc.
 
 Setting Reminders: Users can set reminders or notifications for tasks with upcoming deadlines to receive timely alerts and stay organized.
 
-Responsive Design: The application is accessible on desktops, tablets, and smartphones, offering users the flexibility to manage tasks on the go.
+Responsive Design: The application is accessible on desktops and smartphones, offering users the flexibility to manage tasks on the go.
 
 
 ## The Task Manager App is built using the following technologies:
@@ -106,9 +106,6 @@ Responsive Design: The application is accessible on desktops, tablets, and smart
 **Data Backup:** Implement cloud storage for task data.
 
 **Performance Optimization:** Optimize the app for faster loading times.
-
-
-
 
 
 
