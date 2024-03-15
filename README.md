@@ -89,7 +89,7 @@ Responsive Design: The application is accessible on desktops and smartphones, of
 
 
 
-Feel free to reach out if you have any questions or feedback:
+### Feel free to reach out if you have any questions or feedback:
 
 Name: Simelo Aberra
 Email: simeloab@gmail.com
