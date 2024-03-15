@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  //function to add tasks by taking in tuser inputs with the following paremeters 
+  //function to add tasks by taking in user inputs
   function addTask(taskContent, category, dueDate, priority, isReminderSet, completed = false) {
 
-    //creating the output elements with user data collected 
+    //creating task output 
     const li = document.createElement("li");
     li.innerHTML = `
     <section class="task_description">
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     taskList.appendChild(li);
 
-    //saving inputted data to local storage. Task details are then stored in a way that can be retrieved later.
+    //saving inputted data to local storage
     saveTaskToLocalStorage({
       content: taskContent,
       category: category,
@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // function to save data to local storage
   function saveTaskToLocalStorage(task) {
+
     //gets item form local storage if any, if not initialize an empty array called tasks
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
@@ -197,10 +198,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  // Event delegation for handling edit, and delete buttons
+  // Event for handling edit, and delete buttons
   taskList.addEventListener("click", function (e) {
 
-    //capturing the actual element that was clicked (the event target)
+    //capturing the actual element that was clicked (edit or delete button)
     const target = e.target;
 
     //if the clicked element has the class "edit-btn" (edit button clicked)
@@ -236,8 +237,6 @@ document.addEventListener("DOMContentLoaded", function () {
       saveTasksToLocalStorage();
     }
   });
-
-
 
 
 
