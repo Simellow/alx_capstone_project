@@ -9,31 +9,30 @@
 </head>
 
 <body>
-    <h1>A Task Manager App</h1>
+    <h1>Task Manager</h1>
     <div class="container">
-        <div id="toast-container"></div>
 
         <!-- Form for adding Task -->
         <form id="taskForm">
             <input class="task" type="text" id="taskInput" placeholder="Enter task..." />
             <input class="category" type="text" id="categoryInput" placeholder="Category..." />
-            <input type="date" id="dueDateInput"/>
+            <input type="date" id="dueDateInput" />
             <select id="priorityInput">
                 <option value="">All Priorities</option>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
             </select>
 
             <div id="reminderdiv">
                 <label for="reminderInput">Reminder</label>
                 <input type="checkbox" id="setReminderBtn" />
             </div>
-                <button type="submit" id="addBtn">ADD TASK</button>
+            <button type="submit" id="addBtn">ADD TASK</button>
         </form>
         <!-- End of add task form -->
 
-        <!-- Fitering and searching tasks -->
+        <!-- Search and filtering tasks -->
         <div class="filters">
             <input class="search" type="text" id="searchInput" placeholder="Search task..." />
 
@@ -45,15 +44,16 @@
                 <option value="high">High</option>
             </select>
         </div>
-        <!-- End of filtering and searching tasks -->
-
+        <!-- End of search and filtering tasks -->
 
         <!-- Task outputs... -->
         <ul id="taskList"></ul>
+
+        <!-- Notification pop-up -->
+        <div id="toast-container"></div>
 
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>

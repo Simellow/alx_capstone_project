@@ -4,18 +4,16 @@
     --color-3: #849DDB;
     --color-4: #D444E0;
     --color-5: #1C8BC8;
+    --color-6: darkslateblue;
+    
+    --shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
     --xxs: 5px;
     --xs: 10px;
     --small: 20px;
     --medium: 50px;
-
-    --shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-
 }
 
-
-/* providing a consistent baseline for styling */
 * {
     margin: 0;
     padding: 0;
@@ -29,15 +27,15 @@ body {
     background-image: linear-gradient(#858AF2, #9a62a3);
     width: 100%;
     min-height: 100vh;
-    padding: 10px;
+    padding: var(--xs);
 }
 
 .container {
     max-width: 1000px;
     margin: 50px auto;
-    padding: 50px;
+    padding: var(--medium);
     background-color: var(--color-1);
-    border-radius: 20px;
+    border-radius: var(--small);
     box-shadow: var(--shadow);
 }
 
@@ -52,7 +50,7 @@ form,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--small);
 }
 
 input[type="text"],
@@ -60,46 +58,28 @@ input[type="date"],
 select,
 #reminderdiv {
     flex: 1;
-    padding: 20px;
-    margin-right: 10px;
+    padding: var(--small);
+    margin-right: var(--xs);
     border-radius: var(--small);
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 input[type="text"]:hover {
     box-shadow: var(--shadow);
     transition: box-shadow 0.3s ease-out;
-
 }
 
 input[type="text"]:focus {
     outline: none;
-    /* border: 1px solid var(--color-5); */
-    border: 1px solid darkslateblue;
-    
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border: 1px solid var(--color-6);
 }
-
 
 input[type="date"],
 #priorityFilter,
 #priorityInput,
 #reminderdiv {
-    /* color: var(--color-5); */
-    color: darkslateblue;
-    /* font-weight: bold; */
+    color: var(--color-6);
 }
-
-
-/* input[type="date"],
-#priorityFilter,
-#priorityInput,
-#reminderdiv:hover {
-    box-shadow: var(--shadow);
-    transition: box-shadow 0.3s ease-out;
-} */
-
 
 input[type="date"],
 #priorityFilter,
@@ -108,24 +88,19 @@ input[type="date"],
 }
 
 button[type="submit"] {
-    /* padding: 10px 20px; */
-    padding: 20px;
-    margin: 5px;
+    padding: var(--small);
+    margin: var(--xxs);
     background-color: var(--color-2);
     color: #fff;
     font-weight: bold;
     border: none;
     border-radius: var(--small);
     cursor: pointer;
-
 }
-
-
 
 button[type="submit"]:hover {
     box-shadow: var(--shadow);
     transition: box-shadow 0.3s ease-out;
-
 }
 
 ul {
@@ -137,44 +112,12 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    padding: 10px;
-    /* background-color: rgb(180, 180, 228); */
+    padding: var(--xs);
     border-radius: var(--small);
-    margin-bottom: 10px;
+    margin-bottom: var(--xs);
     background-color: rgb(132, 157, 219, 0.5);
     border: none;
 }
-
-/* #setReminderBtn {
-    accent-color: var(--color-5);
-    border-color: var(--color-5);
-} */
-
-/* added */
-/* .tsk { */
-/* padding-bottom: var(--small);
-}
-.tsk_cont {
-    margin-left: 5px;
-    margin-right: 500px;
-    margin-top: 40px;
-}
-
-
-li .ends {
-    display: flex;
-    justify-content:flex-end; 
-}
-
-.set {
-    padding-top: var(--small);
-    margin-right: var(--small);
-
-}
-
-.btns {
-
-} */
 
 #dueDateInput,
 #priorityInput,
@@ -183,55 +126,39 @@ li .ends {
 #reminderdiv {
     border: none;
     border: 2px solid;
-    /* border-color: var(--color-5); */
-    border-color: darkslateblue;
-    
+    border-color: var(--color-6);
     text-align: center;
 }
 
-
-
-/* New output */
-
-
-.output {
+.output, .filtering {
     display: flex;
 }
 
-.filtering {
-    display: flex;
-}
 
 .filter-div {
-    margin-top: 20px;
-    color: darkslateblue;
+    margin-top: var(--small);
+    color: var(--color-6);
 }
 
 .task_description {
-    padding-bottom: 10px;
-    /* color: darkorchid; */
-    color: darkslateblue;
-
-
+    padding-bottom: var(--xs);
+    color: var(--color-6);
 }
-
-
 
 #cat,
 #due,
 #pri,
 .tsk_cont {
-    margin: 10PX;
+    margin: var(--xs);
 }
 
-
 .btns {
-    margin-left: 50px;
+    margin-left: var(--medium);
 }
 
 .edit-btn {
     background-color: var(--color-2);
-    padding: 10px;
+    padding: var(--xs);
     border-radius: 15px;
 }
 
@@ -240,10 +167,9 @@ li .ends {
     transition: box-shadow 0.3s ease-out;
 }
 
-
 .delete-btn {
     background-color: var(--color-4);
-    padding: 10px;
+    padding: var(--xs);
     border-radius: 15px;
 }
 
@@ -251,7 +177,6 @@ li .ends {
     box-shadow: var(--shadow);
     transition: box-shadow 0.3s ease-out;
 }
-
 
 .task,
 .search,
@@ -269,22 +194,20 @@ li .ends {
     color: #fff;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: var(--xs);
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    /* z-index: 9999; */
+    bottom: var(--small);
+    right: var(--small);
     box-shadow: var(--shadow);
 }
 
 label {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 input[type="checkbox"] {
-    margin-left: 10px;
+    margin-left: var(--xs);
     transform: scale(1.5);
 }
 
@@ -296,21 +219,11 @@ input[type="checkbox"]:checked {
 
 
 
-
-/* check */
-.strikethrough {
-    text-decoration: line-through;
-}
-
-
-
-
-
 /* Mobile responsiveness */
 
 @media only screen and (max-width: 600px) {
     .container {
-        margin: 20px;
+        margin: var(--small);
     }
 
     form,
@@ -321,7 +234,7 @@ input[type="checkbox"]:checked {
     input[type="text"],
     input[type="date"],
     select {
-        margin-bottom: 10px;
+        margin-bottom: var(--xs);
     }
 
     .filter-div {
@@ -331,18 +244,18 @@ input[type="checkbox"]:checked {
     }
 
     button[type="submit"] {
-        margin: 20px;
+        margin: var(--small);
     }
 
     .btns {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: var(--xs);
     }
 
     .task_description {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: var(--medium);
     }
 
     .tsk_cont {
@@ -351,7 +264,7 @@ input[type="checkbox"]:checked {
 
     .edit-btn,
     .delete-btn {
-        margin: 5px;
+        margin: var(--xxs);
     }
 
 }

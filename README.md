@@ -8,27 +8,6 @@ Life, in many ways, can be seen as a series of interconnected tasks. From the mu
 This Task Manager App is a user-friendly application designed to help individuals organize and track their tasks efficiently. Whether it's managing work-related assignments, personal errands, or long-term projects, this app provides a comprehensive solution for task management.
 
 
-<!-- ## Purpose and Goals:
-
-The primary purpose of this app is to allow users to create, edit, and track tasks seamlessly. 
-
-By using the Task Manager App, users can:
-
-**Add Tasks** - Quickly add new tasks with relevant details such as due dates, priorities, and descriptions.
-
-**Edit Tasks** - Modify existing tasks, update due dates, and mark tasks as completed.
-
-**View Tasks** - Easily view all tasks in a clean and organized interface.
-
-**Delete Tasks** - Remove unwanted tasks or completed tasks.
-
-**Mark as Complete** - Mark complete tasks as complete.
-
-**Filter and Search** - Filter and search tasks by priority level
-
-**Stay Organized** - Keep track of deadlines and stay on top of your responsibilities. -->
-
-
 ## Features and Functionality:
 
 **1.User Interface**
@@ -65,7 +44,7 @@ Whether accessing the app on a desktop or smartphone, users can enjoy a consiste
 
 **Interaction:**
 
-Creating Tasks: Users can create new tasks by entering task details such as task name, category, due date, and priority level into input fields provided in the user interface.
+Add/Creating Tasks: Users can create new tasks by entering task details such as task name, category, due date, and priority level into input fields provided in the user interface.
 
 Editing Tasks: To edit a task, users can click on the task element to access the task details, make necessary modifications, and save the changes.
 
@@ -110,11 +89,8 @@ Responsive Design: The application is accessible on desktops and smartphones, of
 
 
 
-### Feel free to reach out if you have any questions or feedback:
+Feel free to reach out if you have any questions or feedback:
 
-### Name: 
-Simelo Aberra
-### Email: 
-simeloab@gmail.com
-### GitHub: 
-@Simellow
+Name: Simelo Aberra
+Email: simeloab@gmail.com
+GitHub: @Simellow
